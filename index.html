@@ -3,37 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- //Bootstrap CSS// -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;
   800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>Blog-Preview-Card</title>
+  <title>Fork-Blog-Preview-Card</title>
 </head>
 <body>
-  <section id="bpv-card-container">
-    <div class="bpv-card-img">
-      <img src="./assets/images/illustration-article.svg" alt="yellow black and white illustration of a design">
+  <div class="container">
+    <div class="row justify-content-center"> 
+      <div class="col-md-8 col-lg-6">        
+        <div class="card p-4 bg-white"> 
+<!-- CARD IMAGE -->
+     <div class="card-img-top mb-3">
+       <img src="./assets/images/illustration-article.svg" alt="yellow black and white illustration of a design">
+     </div>
+     <!-- CARD Body -->
+    <div class="card-body p-0">
+       <!-- Learning badge -->
+        <div class="mb-2">
+         <span class="learning-badge">Learning</span>
+        </div>
+       <!-- Published date -->
+       <p class="date-published mb-2">
+         Published 21 Dec 2023
+       </p>
+      <!-- Post title -->
+        <a href="#" class="text-decoration-none">
+          <h2 class="post-title mb-3">HTML & CSS Foundations</h2>
+        </a>
+        <!-- Post description -->
+        <p class="card-text text-secondary mb-4">These languages are the backbone of every website, 
+        defining structure, content, and presentation.</p>
     </div>
-    <div class="bpr-card-text">
-      <div class="background-color-yellow">
-        <h4>Learning</h4>
+     <!-- Author info -->
+      <div class="d-flex align-items-center mt-2">
+        <img src="./assets/images/image-avatar.webp" alt="Author avatar" class="avatar-img me-3">
+         <h3 class="author name">Greg Hooper</h3>
       </div>
-      <p class="datepublished">
-        Published 21 Dec 2023
-      </p>
-      <a href="#">
-        <h2 class="bpr-post-title">HTML & CSS Foundations</h2>
-      </a>
-      <p class="bpr-text">These languages are the backbone of every website, 
-        defining structure, content, and presentation.
-      </p>
-
+     </div>
+      </div>
+      <div>
     </div>
-    <div class="avatar-author-container">
-      <img src="./assets/images/image-avatar.webp" alt="Author avatar">
-      <h3>Greg Hooper</h3>
-    </div>
-  </section>
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-nPIJO5V27OtABH0Va9cd3zGrBGJKc4CJNyrOiUHiTLEBbSEXh5D/5A7duYKKHWbD" crossorigin="anonymous"></script>
 </body>
 </html>
